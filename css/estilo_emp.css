@@ -115,14 +115,14 @@ main .container{
 .containers{
     align-items: center;
     justify-items: center;
-    width: 1400px;
+    width: 1200px;
     height: 100vh;
     display: flex;
     margin: 40vh;
 }
 
 .form {
-    width: 50%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
