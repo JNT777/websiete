@@ -114,10 +114,11 @@ main .container{
 .containers{
     align-items: center;
     justify-items: center;
-    width: 140vh;
-    height: 40vh;
+    width: 130vh;
+    height: 120vh;
     display: flex;
-    margin: 40vh;
+    margin: 0 25%;
+    
 }
 
 .form {
@@ -274,6 +275,22 @@ main .container{
     font-weight: 500;
     color: #fff;
 }
+a:link {
+    color:#ffffff;
+    text-decoration:none;
+  }
+  a:visited {
+    color:#ffffff;
+    text-decoration:none;
+  }
+  a:hover {
+    color:#fffefe;
+    text-decoration:underline;
+  }
+  a:active {
+    color:#ffffff;
+    text-decoration:underline;
+  }
 
 
 /* responsivo */
@@ -298,12 +315,14 @@ main .container{
 
     }
     .ul.ativo{
-        left: 0;
+        left: 0%;
     }
     main .container{
             flex-direction: column;
     }
-    main .container .main-img,
+    main .container .main-img{
+        width: 100%;
+    }
     main .container .main-text{
         width: 100%;
         text-align: center;
@@ -314,12 +333,20 @@ main .container{
     main .container .main-text div{
         justify-content: center;
     }
+    .form{
+        largura: 50%;
+        margem-inferior: 30px;
+    }
+}
 
 @media (max-width:440px) {
     main .container .main-text h1{
         font-size: 3rem;
     }
-
+    .form{
+        largura: 50%;
+        margem-inferior: 30px;
+    }
 }
 
 @media screen and (max-width: 1330px) {
@@ -361,5 +388,3 @@ main .container{
     }
 }
 
- 
-}

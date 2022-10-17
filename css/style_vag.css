@@ -9,7 +9,6 @@
     list-style: none;
 }
 
-
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -202,6 +201,22 @@ main.cards section.card.about {
         -o-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
         -ms-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
 }
+a:link {
+    color:#ffffff;
+    text-decoration:none;
+  }
+  a:visited {
+    color:#ffffff;
+    text-decoration:none;
+  }
+  a:hover {
+    color:#fffefe;
+    text-decoration:underline;
+  }
+  a:active {
+    color:#ffffff;
+    text-decoration:underline;
+  }
 
 @media screen and (max-width: 720px) {
     main.cards {

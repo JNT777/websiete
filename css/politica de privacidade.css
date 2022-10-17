@@ -20,8 +20,6 @@ body{
     --degrade-btn: linear-gradient(#15ffbd, #1cc2ff);
     --color-p: #a1a1a1;
     --color-p-2: #868585;
-    --color-p-3: #ffffff;
-
 }
 
 .background-roxo{
@@ -31,8 +29,8 @@ body{
 
 /* classes reutilizavies */
 .container{
-    max-width: 1400px;
-    padding: 0 10%;
+    max-width: 1440px;
+    padding: 0 5%;
     margin: 0 auto;
 }
 
@@ -77,59 +75,40 @@ nav{
      color: white;
 }
 
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.main-text{
+    width: 50%;
+    color:white;
+}
+
+.main-text h1{
+    font-size: 3.5rem;
+}
+
+.main-text div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.main-img{
+    width: 50%;
+}
+
+.main-img img{
+    width: 100%;
+}
+
 .menu-icon{
     display: none ; 
      position: relative;
 }
-.melhores-vagas  .azul{
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-    color: #0060f0;
-}
-.melhores-vagas h2{
-    text-align: center;
-    font-size: 2.0rem;
-}
-.melhores-vagas .cards{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-.melhores-vagas .cards .card-item{
-    width: 30%;
-    text-align: center;
-    padding: 30px 0;
-    border-radius: 20px;
-    box-shadow: 0px 35px 97px -15px rgba( 0, 0, 0, 0.20);
-}
-.melhores-vagas .cards img{
-    width: 80px;
-  
-}
-.melhores-vagas .cards .local-vaga{
-    margin: 5px 0;
-    color: var(--color-p)
-}
-.melhores-vagas .cards .nome-vaga{
-    font-size: 25px;
-    font-weight: 500;
-}
-.melhores-vagas .cards .nome-empresa{
-    margin-bottom: 20px;
-    color: var(--color-p-2);
-}
-.melhores-vagas .cards button{
-    padding: 10px 20px;
-    color: white;
-    background-color: var(--roxo-escuro);
-    border: none;
-}
-
-.card.contact {
-    text-align: center;
-}
-  a:link {
+a:link {
     color:#ffffff;
     text-decoration:none;
   }
@@ -145,16 +124,15 @@ nav{
     color:#ffffff;
     text-decoration:underline;
   }
-  .content{
+.content{
     flex: 1 0 auto;
     -webkit-flex: 1 0 auto;
     min-height: 100px;
-    max-width: 1350px;
+    max-width: 2500px;
  }
 #myFooter{
     padding: 0%;
     background-color: var(--roxo-escuro);
-    height: 150px;
 }
 
 #myFooter .container{
@@ -191,8 +169,6 @@ nav{
     background-color: rgb(185, 89, 244);
 }
 
-  
-/* responsivo */
 @media screen and (max-width: 960px) {
     .menu-icon{
         display: block; 
@@ -216,24 +192,17 @@ nav{
     .ul.ativo{
         left: 0;
     }
-    .melhores-vagas .cards{
-        flex-direction: column;
+    .content{
+        largura: 50%;
+        margem-inferior: 30px;
     }
-    .melhores-vagas .cards .card-item{
-        width: 100%;
-    }
+}
+@media screen and (max-width:440px) {
     .content{
         largura: 50%;
         margem-inferior: 30px;
     }
 }
 
-@media screen and (max-width:440px) {
-    main .container .main-text h1{
-        font-size: 3rem;
-    }
-    .content{
-        largura: 50%;
-        margem-inferior: 30px;
-    }
-}
+
+

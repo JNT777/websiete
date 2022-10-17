@@ -74,7 +74,6 @@
                             <input class="password form-control" id="user_password2" data-component="password-strength" data-monitor-id="password-strength-monitor" type="password" placeholder="Insira sua senha">
                         </div>
     
-                    </br>
                         <div class="input-box">
                             <label for="confirmPassword">Confirme sua Senha:</label>
                             <input class="password form-control" id="user_password2" data-component="password-strength" data-monitor-id="password-strength-monitor" type="password" placeholder="Confirme sua senha">
@@ -100,8 +99,8 @@
                     </div>
     
                     <div class="input-box">
-                        <label for="rua">Rua:</label>
-                        <input id="rua" type="text" name="rua" placeholder="Digite o nome da rua onde mora" required>
+                        <label for="rua">Rua/Número:</label>
+                        <input id="rua" type="text" name="rua" placeholder="Digite o nome da rua e o número onde fica a empresa " required>
                         </div>
     
                     <div class="input-box">
@@ -110,19 +109,11 @@
                         </div>
     
                         <div class="input-box">
-                                <label for="cep_cidade" class="input-subtitle"> Qual Cidade: </label>
-            <select id="cep_cidade"><option value="1">Barueri</option><option value="2">Carapicuíba</option><option value="3">Jandira</option></select>
+                                <label for="cep_cidade" class="input-subtitle">Cidade/Estado:</label>
+            <select id="cep_cidade"><option value="1">Barueri/SP</option><option value="2">Carapicuíba/SP</option><option value="3">Jandira
+            /SP</option></select>
         </div>
-    
-                            <div class="input-box">
-                                <label for="cep_estado" class="input-subtitle"> Qual Estado: </label>
-<select name="cep_estado" id="cep_estado" onchange="carregar_cidades()">
-                        <option value="">Selecione</option>
-                        <option value="SP">SP</option>     
-                    </select>
-                </div>
-
-                            
+                
                             <div class="reset-button" type="reset">           
                                 <button>Redefinir</button>
                             </div>  
@@ -130,11 +121,10 @@
                                 <div class="continue-button" type="Enviar">
                                     <button><a href="#">Enviar</a> </button>
                                 </div>
-                
-                                <script src="js/main.js"></script>
-                
                 </form>
             </div>
         </div>
+        <script src="JS/maint.js"></script>
+        
     </body>
-    
+</html>

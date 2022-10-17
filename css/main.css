@@ -308,17 +308,17 @@ iframe {
 [ login ]*/
 
 .limiter {
-    width: 100vh;
+    width: 80vh;
     margin: 5%;
-    height: 100vh;
+    height: 50vh;
     padding: 0 5%;
     background-color: var(--roxo-escuro);
 }
 
 .container-login100 {
     position: absolute;
-    width: 185vh;
-    height: 10vh;
+    width: 130vh;
+    height: 90vh;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -336,7 +336,7 @@ iframe {
 }
 
 .wrap-login100 {
-    top: 100vh;
+    top: 100%;
     width: 450px;
     height: 800px;
     background: rgb(255, 255, 255);
@@ -600,19 +600,85 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Responsive ]*/
 
-@media (max-width: 768px) {
-    .wrap-login100 {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    }
-
-
-    @media (max-width: 600px) {
-        .background-roxo{
-            float: none;
-            text-align: center;
+    @media screen and (max-width: 1200px) {
+        .form-image {
+            display: none;
+        }
+        .container {
+            width: 50%;
+        }
+        .form {
             width: 100%;
         }
-}
+    }
+    
+    @media screen and (max-width: 1300px) {
+        .container {
+            width: 90%;
+            height: auto;
+        }
+        .input-group {
+            flex-direction: column;
+            z-index: 5;
+            padding-right: 5rem;
+            max-height: 10rem;
+            overflow-y: scroll;
+            flex-wrap: nowrap;
+        }
+        .gender-inputs {
+            margin-top: 2rem;
+        }
+        .gender-group {
+            flex-direction: column;
+        }
+        .gender-title h6 {
+            margin: 0;
+        }
+        .gender-input {
+            margin-top: 0.5rem;
+        }
+    }
+    @media screen and (max-width: 960px) {
+        .menu-icon{
+            display: block; 
+        }
+        .ul{
+           position: fixed;
+           background:  var(--roxo-escuro); 
+           top: 0;
+           width: 100%;
+           height: 100%;
+           left: 100%;
+           transition: 0.3s;
+           flex-direction: column;
+           justify-content: center;
+        }
+        .ul li{
+            font-size: 20px;
+            margin: 20px 0;
+    
+        }
+        .ul.ativo{
+            left: 0;
+        }
+        .limiter {
+            largura: 50%;
+            margem-inferior: 30px;
+        }
+        .alert-validate::before {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+        
+
+    @media screen and (max-width:440px) {
+        .limiter{
+            largura: 50%;
+            margem-inferior: 30px;
+        }
+        .wrap-login100 {
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+        } 

@@ -115,14 +115,15 @@ main .container{
 .containers{
     align-items: center;
     justify-items: center;
-    width: 1400px;
-    height: 130vh;
+    width: 130vh;
+    height: 150vh;
     display: flex;
-    margin: 40vh;
+    margin: 0 25%;
+    
 }
 
 .form {
-    width: 52%;
+    width: 59%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -275,8 +276,67 @@ main .container{
     font-weight: 500;
     color: #fff;
 }
+.content{
+    flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+    min-height: 100px;
+    max-width: 1350px;
+ }
+#myFooter{
+    padding: 0%;
+    background-color: var(--roxo-escuro);
+    height: 100px;
+}
 
+#myFooter .container{
+    text-align: center;
+}
 
+#myFooter .footer-copyright{
+    margin-bottom: 35px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#myFooter ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 18px;
+}
+
+#myFooter a{
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#myFooter li{
+    display: inline-block;
+    margin: 0px 15px;
+    line-height: 2;
+}
+
+#myFooter .footer-social{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: rgb(185, 89, 244);
+}
+a:link {
+    color:#ffffff;
+    text-decoration:none;
+  }
+  a:visited {
+    color:#ffffff;
+    text-decoration:none;
+  }
+  a:hover {
+    color:#fffefe;
+    text-decoration:underline;
+  }
+  a:active {
+    color:#ffffff;
+    text-decoration:underline;
+  }
 /* responsivo */
 @media screen and (max-width: 960px) {
     .menu-icon{
@@ -301,29 +361,6 @@ main .container{
     .ul.ativo{
         left: 0;
     }
-    main .container{
-            flex-direction: column;
-    }
-    main .container .main-img,
-    main .container .main-text{
-        width: 100%;
-        text-align: center;
-    }
-    main .container .main-text h1{
-         font-size: 4rem;
-    }
-    main .container .main-text div{
-        justify-content: center;
-    }
-
-@media (max-width:440px) {
-    main .container .main-text h1{
-        font-size: 3rem;
-    }
-
-}
-
-@media screen and (max-width: 1330px) {
     .form-image {
         display: none;
     }
@@ -335,7 +372,15 @@ main .container{
     }
 }
 
-@media screen and (max-width: 1064px) {
+
+@media (max-width:440px) {
+    .containers{
+        font-size: 3rem;
+    }
+    .content{
+        largura: 50%;
+        margem-inferior: 30px;
+    }
     .containers {
         width: 90%;
         height: auto;
@@ -360,7 +405,7 @@ main .container{
     .gender-input {
         margin-top: 0.5rem;
     }
-}
-
- 
+    .footer-col{
+        width: 100%;
+    }
 }
